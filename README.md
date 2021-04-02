@@ -1,10 +1,10 @@
-#Project: Data Warehouse with AWS
+# Project: Data Warehouse with AWS
 Completed by Ken Jung, as part of the Udacity Data Engineering Nanodegree Program
 
-###Introduction
+### Introduction
 Task is to build an ETL Pipeline that extracts their data from S3, staging it in Redshift and then transforming data into a set of Dimensional and Fact Tables for their Analytics Team to continue finding Insights to what songs their users are listening to. Data is from the two public s3 buckets provided by the Udacity team. One contains information about songs and artst, and the other one has information about log actions done by users. 
 
-###Instruction
+### Instruction
 Create Table Schema
 
 - Write a SQL CREATE statement for each of these tables in sql_queries.py
@@ -14,7 +14,7 @@ Create Table Schema
 - Add redshift database and IAM role info to dwh.cfg.
 - Test by running create_tables.py and checking the table schemas in your redshift database.
 
-###Project Workspace and Files
+### Project Workspace and Files
 - create_tables.py : Script to drop old table if exists and recreate a new table schema
 - dwh.cfg : File that contains configuration information to access Redshift, IAM, and S3
 - etl.py : Script that is used for executing the queries that extract JSON data from the S3 bucket and integrate them to a deployed Redshift
